@@ -1,0 +1,36 @@
+.CSH_stack {
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+.blue { background: #5abae6; }
+.red { background: #d34e4e; }
+.green { background: #9dbb19; }
+.yellow { background: #f7b358; }
+
+span {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.8em;
+    text-align: center;
+    border-radius: 20px;
+}
+
+body {
+    background: #242424;
+}
+
+.div_hor {
+    margin: 15px 50px;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 20px;
+    }
+}
