@@ -3,6 +3,9 @@
     text-align: center;
 }
 
+body {
+    background: #242424;
+}
 
 
 
@@ -21,16 +24,29 @@ span {
     border-radius: 20px;
 }
 
-body {
-    background: #242424;
-}
 
 .div_hor {
     margin: 15px 50px;
 }
 
-@media (max-width: 600px) {
-    .title {
-        font-size: 20px;
+.cir_graph {
+position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 700px) {
+    .cir_graph {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .bar_hor {
+        opacity: 0;
+    }
+
+    .cir_graph {
+        opacity: 1;
     }
 }
