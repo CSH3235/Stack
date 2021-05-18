@@ -1,11 +1,54 @@
-.CSH_stack {
-    color: #fff;
-    text-align: center;
-}
-
 body {
     background: #242424;
 }
+
+.CSH_stack {
+    color: #fff;
+    text-align: center;
+}    
+
+
+.icons {
+    display: flex;
+}
+
+.icons div {    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0;
+    animation: topTobottom 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
+
+.icons div a {
+    color: #000;
+    font-size: 20px;
+}
+
+.icons div:nth-child(2) {
+    margin-right: 20em;
+}
+
+@keyframes topTobottom {
+    from {
+        transform: translateY(-65px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
 
 
 
