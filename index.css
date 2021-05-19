@@ -73,13 +73,14 @@ span {
     cursor: pointer;
     opacity: 0;
     margin: 10px;
-    overflow: hidden;
 }
 
 .icons div a {
     color: #fff;
     font-size: 20px;
 }
+
+
 
 
 
@@ -138,6 +139,7 @@ span {
     }
 }
 
+
 @keyframes topTobottom_4 {
     from {
         transform: translateX(-65px);
@@ -149,15 +151,6 @@ span {
 }
 
 .icons div:hover {
-    animation: Change_BG 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-fill-mode: forwards;
-}
-
-@keyframes Change_BG {
-    from {
-        scale: 0;
-    }
-    to {
-
-    }
+    transition: .3s all ease-in-out;
+    background: #99E4CA;
 }
