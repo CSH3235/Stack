@@ -5,10 +5,13 @@ body {
 .CSH_stack {
     color: #fff;
     text-align: center;
-}    
+}
 
 
-
+.bar_hor {
+    position: relative;
+    top: 100px;
+}
 
 
 .blue { background: #5abae6; }
@@ -16,7 +19,10 @@ body {
 .green { background: #9dbb19; }
 .yellow { background: #f7b358; }
 
-span {
+
+
+
+.bar_hor span {
     display: block;
     margin: 10px 0;
     color: #fff;
@@ -27,9 +33,6 @@ span {
 }
 
 
-.div_hor {
-    margin: 15px 50px;
-}
 
 .cir_graph {
     position: absolute;
@@ -54,6 +57,17 @@ span {
 }
 
 
+@media (min-height: 650px) {
+    .icons {
+        opacity: 0;
+    }
+}
+
+@media (max-height: 650px) {
+    .icons {
+        opacity: 0;
+    }
+}
 
 
 .icons {
