@@ -63,18 +63,22 @@ span {
 }
 
 .icons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #317FFF;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     opacity: 0;
-
+    margin: 10px;
+    overflow: hidden;
 }
 
 .icons div a {
     color: #fff;
     font-size: 20px;
-    align-items: center;
 }
 
 
@@ -144,5 +148,16 @@ span {
     }
 }
 
+.icons div:hover {
+    animation: Change_BG 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
 
+@keyframes Change_BG {
+    from {
+        scale: 0;
+    }
+    to {
 
+    }
+}
