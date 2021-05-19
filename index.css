@@ -8,47 +8,6 @@ body {
 }    
 
 
-.icons {
-    display: flex;
-}
-
-.icons div {    
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    opacity: 0;
-    animation: topTobottom 3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-fill-mode: forwards;
-}
-
-.icons div a {
-    color: #000;
-    font-size: 20px;
-}
-
-.icons div:nth-child(2) {
-    margin-right: 20em;
-}
-
-@keyframes topTobottom {
-    from {
-        transform: translateY(-65px);
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-
-
-
-
-
 
 
 
@@ -73,7 +32,7 @@ span {
 }
 
 .cir_graph {
-position: absolute;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -88,8 +47,102 @@ position: absolute;
     .bar_hor {
         opacity: 0;
     }
-
+    
     .cir_graph {
         opacity: 1;
     }
 }
+
+
+
+
+.icons {
+    position: absolute;
+    bottom: 0;
+    margin: 5px 20px;
+}
+
+.icons div {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0;
+
+}
+
+.icons div a {
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+}
+
+
+
+.icons div:nth-child(1) {
+    animation: topTobottom_1 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+}
+
+.icons div:nth-child(2) {
+    animation: topTobottom_2 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+}
+
+.icons div:nth-child(3) {
+    animation: topTobottom_3 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 300ms;
+}
+
+.icons div:nth-child(4) {
+    animation: topTobottom_4 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+}
+
+
+@keyframes topTobottom_1 {
+    from {
+        transform: translateX(-65px);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes topTobottom_2 {
+    from {
+        transform: translateX(-65px);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes topTobottom_3 {
+    from {
+        transform: translateX(-65px);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes topTobottom_4 {
+    from {
+        transform: translateX(-65px);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
